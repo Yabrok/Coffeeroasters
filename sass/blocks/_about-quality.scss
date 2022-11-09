@@ -10,6 +10,7 @@
     background-position: bottom center;
     border-radius: 10px;
     padding-left: 85px;
+    margin-bottom: 168px;
 }
 
 .quality__content {
@@ -39,6 +40,64 @@
 .quality__img {
     margin-left: 125px;
     border-radius: 8px;
+}
+
+.region__title {
+    margin: 0 0 72px;
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #83888F;
+}
+
+.regions__list {
+    @include unlist;
+    display: flex;
+    justify-content: space-between;
+}
+
+.regions__item {
+    width: 100%;
+    max-width: 285px;
+
+    &::before {
+        content: '';
+        display: inline-block;
+        width: 52px;
+        height: 52px;
+        background-image: url('../../icons/UK.svg');
+        background-repeat: no-repeat;
+        background-position: top left;
+        margin-bottom: 45px;
+    }
+
+    &:nth-child(2)::before {
+        background-image: url('../../icons/canada.svg');
+    }
+
+    &:nth-child(3)::before {
+        background-image: url('../../icons/australia.svg');
+    }
+}
+
+.regionsitem__subtitle {
+    margin: 0 0 24px;
+    font-family: 'Fraunces';
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 36px;
+    color: #333D4B;
+}
+
+.regions__info {
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #333D4B;
 }
 
 @media only screen and(max-width:768px) {
@@ -75,6 +134,11 @@
         margin-left: 0;
         border-radius: 9px;
     }
+
+    .regionsitem__subtitle {
+        font-size: 24px;
+        line-height: 36px;
+    }
 }
 
 @media only screen and(max-width:607px) {
@@ -91,5 +155,38 @@
         margin: 0 0 24px;
         font-size: 28px;
         line-height: 28px;
+    }
+
+    .regions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .region__title {
+        text-align: center;
+    }
+
+    .regions__list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .regions__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .regions__item:not(:last-child) {
+        margin-bottom: 80px;
+    }
+
+    .regionsitem__subtitle {
+        text-align: center;
+    }
+
+    .regions__info {
+        text-align: center;
     }
 }
