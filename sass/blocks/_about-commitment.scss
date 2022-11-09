@@ -53,6 +53,10 @@
 }
 
 @media only screen and(max-width:697px) {
+    .commitment {
+        padding: 0 0 120px;
+    }
+    
     .commitment__inner {
         flex-direction: column;
         align-items: center;
