@@ -1,0 +1,37 @@
+.work__inner-subscribe {
+    padding: 100px 0;
+    background-image: url('../../images/work-darkbg.jpg');
+}
+
+.work__content-subscribe {
+    padding: 100px 85px 0;
+    background-image: url('../../icons/line-grafdark.svg');
+    background-position: left 85px top;
+}
+
+.work__list-subscribe {
+    margin: 0;
+}
+
+.workitem__subtitle-subscribe {
+    color: #FEFCF7;
+}
+
+.workitem__text-subscribe {
+    color: #FEFCF7;
+}
+
+@media only screen and(max-width:786px){
+    .work__content-subscribe {
+        background-image: url('../../icons/line-grafdark_tablet.svg');
+    }
+}
+
+@media only screen and(max-width:576px) {
+    .work__content-subscribe {
+        padding: 0 85px;
+        background-image: none;
+    }
+}
+
+
